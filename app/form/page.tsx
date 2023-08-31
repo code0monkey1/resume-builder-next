@@ -16,7 +16,9 @@ const Form = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl p-4">{Step}</h1>
+      <h1 className="flex justify-center text-4xl p-4">
+        <form>{Step}</form>
+      </h1>
       <button onClick={next}>Next</button>
       <button onClick={back}>Previous</button>
     </>
