@@ -1,4 +1,4 @@
-import ResumeBuilder, { Address } from '../app/src/ResumeBuilder';
+import ResumeBuilder, { Address } from '../src/ResumeBuilder';
 
 describe('First test', () => {
   it('should be true', () => {
