@@ -22,7 +22,7 @@ const Form = () => {
         </div>
         <form>{Step}</form>
       </h1>
-      <div className="flex justify-center gap-2  ">
+      <div className="flex justify-center gap-2 ">
         <button
           className=" border p-2 border-spacing-2 rounded-2xl "
           onClick={next}
