@@ -16,13 +16,13 @@ const Form = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl p-4 ">
+      <h1 className="flex justify-center text-4xl p-4 items-end ">
         <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
           {currentStepIndex + 1}/{steps.length}
         </div>
         <form>{Step}</form>
       </h1>
-      <div className="flex gap-2 align-bottom ">
+      <div className="flex gap-2 align-bottom justify-center ">
         <button
           className="border p-2 border-spacing-2 rounded-2xl"
           onClick={next}
