@@ -17,6 +17,7 @@ const Form = () => {
   return (
     <>
       <h1 className="flex justify-center text-4xl p-4">
+        <div style={{ position: 'absolute', top: '.5', right: '.5' }}></div>
         <form>{Step}</form>
       </h1>
       <button onClick={next}>Next</button>
