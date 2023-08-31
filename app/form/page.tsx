@@ -22,8 +22,12 @@ const Form = () => {
         </div>
         <form>{Step}</form>
       </h1>
-      <button onClick={next}>Next</button>
-      <button onClick={back}>Previous</button>
+      <div className="flex justify-center ">
+        <button className="rounded-none border-spacing-2" onClick={next}>
+          Next
+        </button>
+        <button onClick={back}>Previous</button>
+      </div>
     </>
   );
 };
