@@ -17,7 +17,7 @@ const Form = () => {
   return (
     <>
       <h1 className="flex justify-center text-4xl p-4">
-        <div style={{ position: 'absolute', top: '.5', right: '.5' }}>
+        <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
           {currentStepIndex + 1}/{steps.length}
         </div>
         <form>{Step}</form>
