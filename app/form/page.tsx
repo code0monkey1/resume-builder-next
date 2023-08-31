@@ -22,11 +22,19 @@ const Form = () => {
         </div>
         <form>{Step}</form>
       </h1>
-      <div className="flex justify-center ">
-        <button className="rounded-none border-spacing-2" onClick={next}>
+      <div className="flex justify-center gap-2  ">
+        <button
+          className=" border p-2 border-spacing-2 rounded-2xl "
+          onClick={next}
+        >
           Next
         </button>
-        <button onClick={back}>Previous</button>
+        <button
+          className=" border p-2 border-spacing-2 rounded-2xl "
+          onClick={back}
+        >
+          Previous
+        </button>
       </div>
     </>
   );
