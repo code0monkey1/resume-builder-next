@@ -16,21 +16,21 @@ const Form = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl p-4 items-end ">
+      <h1 className="h-auto flex justify-center text-4xl  ">
         <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
           {currentStepIndex + 1}/{steps.length}
         </div>
         <form>{Step}</form>
       </h1>
-      <div className="flex gap-2 align-bottom justify-center ">
+      <div className="flex gap-2 justify-center ">
         <button
-          className="border p-2 border-spacing-2 rounded-2xl"
+          className="border border-spacing-2 rounded-2xl p-2 "
           onClick={next}
         >
           Next
         </button>
         <button
-          className="border p-2 border-spacing-2 rounded-2xl"
+          className="border  border-spacing-2 rounded-2xl p-2 "
           onClick={back}
         >
           Previous
