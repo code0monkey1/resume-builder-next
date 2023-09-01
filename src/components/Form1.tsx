@@ -7,33 +7,27 @@ const Form1 = (props: Props) => {
   return (
     <>
       <FormWrapper title="Personal Information">
-        <div
-          style={{ color: 'black' }}
-          className="text-black flex flex-col border border-black  p-2"
-        >
-          <label>First Name</label>
-          <input
-            className=" border w-fit p-2"
-            placeholder="enter your first name"
-            type="text"
-            autoFocus
-            required
-          />
-          <label>Last Name</label>
-          <input
-            className=" border  w-fit p-2 text-black"
-            placeholder="enter your last name"
-            type="text"
-            required
-          />
-          <label>Age</label>
-          <input
-            className=" border w-fit p-2 text-black"
-            placeholder="enter your age"
-            type="text"
-            required
-          />
-        </div>
+        <input
+          className=" border w-fit p-2"
+          placeholder="enter your first name"
+          type="text"
+          autoFocus
+          required
+        />
+        <label>Last Name</label>
+        <input
+          className=" border  w-fit p-2 text-black"
+          placeholder="enter your last name"
+          type="text"
+          required
+        />
+        <label>Age</label>
+        <input
+          className=" border w-fit p-2 text-black"
+          placeholder="enter your age"
+          type="text"
+          required
+        />
       </FormWrapper>
     </>
   );
