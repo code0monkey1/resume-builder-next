@@ -17,7 +17,10 @@ const Form = () => {
   return (
     <>
       <form className="w-screen h-screen">
-        <div> 1/2</div>
+        <div style={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}>
+          {' '}
+          <h1 className="text-4xl"> 1/2 </h1>
+        </div>
       </form>
     </>
   );
