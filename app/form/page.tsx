@@ -16,28 +16,7 @@ const Form = () => {
 
   return (
     <>
-      <form className="flex justify-center h-full  ">
-        <div className="text-4xl w-full">
-          <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
-            {currentStepIndex + 1}/{steps.length}
-          </div>
-          <div>{Step}</div>
-        </div>
-        <div className="flex gap-2 justify-center w-full  ">
-          <button
-            className="border border-spacing-2 rounded-2xl p-2 "
-            onClick={next}
-          >
-            Next
-          </button>
-          <button
-            className="border  border-spacing-2 rounded-2xl p-2 "
-            onClick={back}
-          >
-            Previous
-          </button>
-        </div>
-      </form>
+      <form></form>
     </>
   );
 };
