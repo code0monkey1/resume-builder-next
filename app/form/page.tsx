@@ -21,7 +21,15 @@ const Form = () => {
         <div className="absolute top-2 right-2 ">
           {currentStepIndex + 1}/{steps.length}
         </div>
-        <div className="mt-4"></div>
+        <div className="mt-4 flex gap-2 justify-end">
+          <button
+            className="border
+           rounded-md p-2 border-black border-solid"
+          >
+            Back
+          </button>
+          <button>Next</button>
+        </div>
       </form>
     </div>
   );
