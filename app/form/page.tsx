@@ -5,7 +5,16 @@ import Form1 from '@/src/components/Form1';
 import Form2 from '@/src/components/Form2';
 
 const Form = () => {
-  const { currentStepIndex, back, goTo, next, Step, steps } = useForm([
+  const {
+    currentStepIndex,
+    back,
+    goTo,
+    next,
+    Step,
+    steps,
+    isFirstStep,
+    isLastStep,
+  } = useForm([
     <div key="1">
       <h1>
         <Form1 />
@@ -29,7 +38,7 @@ const Form = () => {
           {currentStepIndex + 1}/{steps.length}
         </div>
         <div className="mt-4 flex gap-2 justify-end">
-          {currentStepIndex !== 0 && (
+          {!isFirstStep && (
             <button
               type="button"
               onClick={back}
@@ -39,7 +48,7 @@ const Form = () => {
               Back
             </button>
           )}
-          {currentStepIndex + 1 !== steps.length && (
+          {!isLastStep && (
             <button
               type="button"
               onClick={next}
