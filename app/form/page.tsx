@@ -7,9 +7,9 @@ import Form3 from '@/src/components/Form3';
 import { FormEvent, useState } from 'react';
 
 const INITIAL_DATA = {
-  firstName: '',
-  lastName: '',
-  age: '',
+  firstName: 'first name',
+  lastName: 'last name',
+  age: '29',
   street: '',
   city: '',
   state: '',
@@ -18,7 +18,7 @@ const INITIAL_DATA = {
   email: '',
 };
 
-export type InintialData = typeof INITIAL_DATA;
+export type InitialData = typeof INITIAL_DATA;
 
 const Form = () => {
   const [data, setData] = useState(INITIAL_DATA);

@@ -1,9 +1,9 @@
 'use client';
+import { InitialData } from '@/app/form/page';
 import React from 'react';
 import FormWrapper from './FormWrapper';
-type Props = {};
 
-const Form1 = (props: Props) => {
+const Form1 = ({ firstName, lastName, age }: Partial<InitialData>) => {
   return (
     <>
       <FormWrapper title="Personal Information">
@@ -14,6 +14,7 @@ const Form1 = (props: Props) => {
           type="text"
           autoFocus
           required
+          defaultValue={firstName}
         />
         <label>Last Name</label>
         <input
@@ -22,6 +23,7 @@ const Form1 = (props: Props) => {
           placeholder="enter your last name"
           type="text"
           required
+          defaultValue={lastName}
         />
         <label>Age</label>
         <input
@@ -30,6 +32,7 @@ const Form1 = (props: Props) => {
           placeholder="enter your age"
           type="text"
           required
+          defaultValue={age}
         />
       </FormWrapper>
     </>
