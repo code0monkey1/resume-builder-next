@@ -7,7 +7,10 @@ import Form2 from '@/src/components/Form2';
 const Form = () => {
   const { currentStepIndex, back, goTo, next, Step, steps } = useForm([
     <div key="1">
-      <h1>Hello</h1>
+      <h1>One</h1>
+    </div>,
+    <div key="2">
+      <h1>Two</h1>
     </div>,
     <div key="2">
       <h1>There</h1>
