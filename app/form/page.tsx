@@ -55,7 +55,11 @@ const Form = () => {
 
   const onSubmitHandler = (e: FormEvent) => {
     e.preventDefault();
-    next();
+    if (!isLastStep) {
+      next();
+    } else {
+      alert('submitted form');
+    }
   };
   return (
     <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono">
