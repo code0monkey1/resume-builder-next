@@ -18,7 +18,7 @@ const INITIAL_DATA = {
   email: '',
 };
 
-type InintialData = typeof INITIAL_DATA;
+export type InintialData = typeof INITIAL_DATA;
 
 const Form = () => {
   const [data, setData] = useState(INITIAL_DATA);
@@ -34,7 +34,7 @@ const Form = () => {
   } = useForm([
     <div key="1">
       <h1>
-        <Form1 />
+        <Form1 {...data} />
       </h1>
     </div>,
     <div key="2">
