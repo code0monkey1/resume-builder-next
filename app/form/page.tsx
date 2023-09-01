@@ -16,7 +16,9 @@ const Form = () => {
 
   return (
     <>
-      <form></form>
+      <form className="w-screen h-screen">
+        <div> 1/2</div>
+      </form>
     </>
   );
 };
