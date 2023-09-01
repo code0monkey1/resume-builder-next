@@ -24,18 +24,22 @@ const Form = () => {
         <div className="mt-4 flex gap-2 justify-end">
           {currentStepIndex !== 0 && (
             <button
+              onClick={back}
               className="border
            rounded-md p-2 bg-gray-100 border-black border-solid"
             >
               Back
             </button>
           )}
-          <button
-            className="border
+          {currentStepIndex + 1 !== steps.length && (
+            <button
+              onClick={next}
+              className="border
            rounded-md p-2 bg-gray-100 border-black border-solid"
-          >
-            Next
-          </button>
+            >
+              Next
+            </button>
+          )}
         </div>
       </form>
     </div>
