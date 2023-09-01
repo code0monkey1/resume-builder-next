@@ -15,7 +15,7 @@ const Form = () => {
   ]);
 
   return (
-    <>
+    <div>
       <form
         style={{ height: '90vh', margin: '0.2rem' }}
         className="border rounded-sm p-6"
@@ -28,7 +28,7 @@ const Form = () => {
           </h1>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 export default Form;
