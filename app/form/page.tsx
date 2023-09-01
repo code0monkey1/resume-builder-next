@@ -44,8 +44,8 @@ const Form = () => {
             <button
               type="button"
               onClick={back}
-              className="border
-           rounded-md p-2 bg-gray-100 border-black border-solid"
+              className="
+           rounded-md p-2 "
             >
               Back
             </button>
