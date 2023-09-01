@@ -10,7 +10,7 @@ const Form1 = (props: Props) => {
         <div className="flex flex-col border border-black  p-2">
           <label>First Name</label>
           <input
-            className=" border w-fit p-2 text-white"
+            className=" border w-fit p-2 bg-black"
             placeholder="enter your name"
             type="text"
             autoFocus
