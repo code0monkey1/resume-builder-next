@@ -19,7 +19,10 @@ const Form = () => {
       <form className="w-screen h-screen">
         <div style={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}>
           {' '}
-          <h1 className="text-4xl"> 1/2 </h1>
+          <h1 className="text-4xl">
+            {' '}
+            {currentStepIndex + 1}/{steps.length}{' '}
+          </h1>
         </div>
       </form>
     </>
