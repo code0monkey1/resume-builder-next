@@ -45,7 +45,7 @@ const Form = () => {
               type="button"
               onClick={back}
               className="
-           rounded-md p-2 "
+           rounded-md p-2 border"
             >
               Back
             </button>
@@ -54,8 +54,8 @@ const Form = () => {
             <button
               type="button"
               onClick={next}
-              className="border
-           rounded-md p-2 bg-gray-100 border-black border-solid"
+              className="
+           rounded-md p-2 border"
             >
               {isLastStep ? 'Finish' : 'Next'}
             </button>

@@ -18,7 +18,7 @@ const Form1 = (props: Props) => {
           />
           <label>Last Name</label>
           <input
-            className=" border  w-fit p-2"
+            className=" border  w-fit p-2 text-black"
             placeholder="enter your name"
             type="text"
             required
