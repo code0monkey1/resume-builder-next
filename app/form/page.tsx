@@ -4,9 +4,24 @@ import useForm from '@/src/ResumeBuilder/hooks/userForm';
 import Form1 from '@/src/components/Form1';
 import Form2 from '@/src/components/Form2';
 import Form3 from '@/src/components/Form3';
-import { FormEvent, ReactEventHandler } from 'react';
+import { FormEvent, useState } from 'react';
+
+const INITIAL_DATA = {
+  firstName: '',
+  lastName: '',
+  age: '',
+  street: '',
+  city: '',
+  state: '',
+  zip: '',
+  password: '',
+  email: '',
+};
+
+type InintialData = typeof INITIAL_DATA;
 
 const Form = () => {
+  const [data, setData] = useState(INITIAL_DATA);
   const {
     currentStepIndex,
     back,
