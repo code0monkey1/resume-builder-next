@@ -16,14 +16,14 @@ const Form = () => {
 
   return (
     <>
-      <div className="flex justify-center h-full items-end">
-        <h1 className="  text-4xl  ">
+      <form className="flex justify-center h-full  ">
+        <div className="text-4xl w-full">
           <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
             {currentStepIndex + 1}/{steps.length}
           </div>
-          <form>{Step}</form>
-        </h1>
-        <div className="flex gap-2 justify-center ">
+          <div>{Step}</div>
+        </div>
+        <div className="flex gap-2 justify-center w-full  ">
           <button
             className="border border-spacing-2 rounded-2xl p-2 "
             onClick={next}
@@ -37,7 +37,7 @@ const Form = () => {
             Previous
           </button>
         </div>
-      </div>
+      </form>
     </>
   );
 };
