@@ -29,7 +29,7 @@ const Form = () => {
           {currentStepIndex + 1}/{steps.length}
         </div>
         <div className="mt-4 flex gap-2 justify-end">
-          {currentStepIndex !== 0 ? (
+          {currentStepIndex !== 0 && (
             <button
               onClick={back}
               className="border
@@ -37,10 +37,8 @@ const Form = () => {
             >
               Back
             </button>
-          ) : (
-            ''
           )}
-          {currentStepIndex + 1 !== steps.length ? (
+          {currentStepIndex + 1 !== steps.length && (
             <button
               onClick={next}
               className="border
@@ -48,8 +46,6 @@ const Form = () => {
             >
               Next
             </button>
-          ) : (
-            ''
           )}
         </div>
       </form>
