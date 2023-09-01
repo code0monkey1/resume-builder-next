@@ -40,7 +40,7 @@ const Form = () => {
   } = useForm([
     <div key="1">
       <h1>
-        <Form1 {...data} />
+        <Form1 {...data} updateFields={updateFields} />
       </h1>
     </div>,
     <div key="2">
