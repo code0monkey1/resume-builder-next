@@ -56,10 +56,12 @@ const Form = () => {
   const onSubmitHandler = (e: FormEvent) => {
     e.preventDefault();
     if (!isLastStep) return next();
+
+    // can submit form to DB
     alert('submitted form');
   };
   return (
-    <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono">
+    <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono max-w-screen-xl mx-auto ">
       <form onSubmit={onSubmitHandler}>
         <div className="absolute top-2 right-2 ">
           {currentStepIndex + 1}/{steps.length}
