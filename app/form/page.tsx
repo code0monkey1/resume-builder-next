@@ -3,6 +3,7 @@
 import useForm from '@/src/ResumeBuilder/hooks/userForm';
 import Form1 from '@/src/components/Form1';
 import Form2 from '@/src/components/Form2';
+import Form3 from '@/src/components/Form3';
 
 const Form = () => {
   const {
@@ -26,7 +27,7 @@ const Form = () => {
       </h1>
     </div>,
     <div key="2">
-      <h1>There</h1>
+      <Form3 />
     </div>,
   ]);
 
