@@ -15,8 +15,10 @@ const Form = () => {
   ]);
 
   return (
-    <div className="relative bg-white border border-solid border-black">
-      <form></form>
+    <div className="relative bg-white border border-solid border-black p-8 m-4">
+      <form>
+        <h2>{Step}</h2>
+      </form>
     </div>
   );
 };
