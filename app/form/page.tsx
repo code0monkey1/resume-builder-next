@@ -15,7 +15,7 @@ const Form = () => {
   ]);
 
   return (
-    <div>
+    <div className="relative bg-white">
       <form
         style={{ height: '90vh', margin: '0.2rem' }}
         className="border rounded-sm p-6"
