@@ -16,10 +16,9 @@ const Form = () => {
 
   return (
     <div className="relative bg-white border border-solid border-black p-8 m-4 rounded-md font-mono">
+      FORM
       <form>
-        <div className="absolute top-2 right-2 ">
-          {currentStepIndex + 1}/{steps.length}
-        </div>
+        <h1 className="absolute top-2 right-2 ">2 / 3</h1>
       </form>
     </div>
   );
