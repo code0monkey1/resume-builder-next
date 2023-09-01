@@ -7,10 +7,14 @@ import Form2 from '@/src/components/Form2';
 const Form = () => {
   const { currentStepIndex, back, goTo, next, Step, steps } = useForm([
     <div key="1">
-      <h1>One</h1>
+      <h1>
+        <Form1 />
+      </h1>
     </div>,
     <div key="2">
-      <h1>Two</h1>
+      <h1>
+        <Form2 />
+      </h1>
     </div>,
     <div key="2">
       <h1>There</h1>
@@ -25,7 +29,7 @@ const Form = () => {
           {currentStepIndex + 1}/{steps.length}
         </div>
         <div className="mt-4 flex gap-2 justify-end">
-          {currentStepIndex !== 0 && (
+          {currentStepIndex !== 0 ? (
             <button
               onClick={back}
               className="border
@@ -33,8 +37,10 @@ const Form = () => {
             >
               Back
             </button>
+          ) : (
+            ''
           )}
-          {currentStepIndex + 1 !== steps.length && (
+          {currentStepIndex + 1 !== steps.length ? (
             <button
               onClick={next}
               className="border
@@ -42,6 +48,8 @@ const Form = () => {
             >
               Next
             </button>
+          ) : (
+            ''
           )}
         </div>
       </form>
