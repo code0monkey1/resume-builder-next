@@ -6,7 +6,11 @@ type Props = {
 };
 
 const FormWrappter = ({ title, children }: Props) => {
-  return <div>FormWrappter</div>;
+  return (
+    <div>
+      <h2 className="text-center mt-0 mb-8"></h2>
+    </div>
+  );
 };
 
 export default FormWrappter;
