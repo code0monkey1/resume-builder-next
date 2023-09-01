@@ -8,6 +8,7 @@ const Form2 = (props: Props) => {
   return (
     <FormWrapper title="Address">
       <div
+        style={{ color: 'black' }}
         className="flex flex-col
       "
       >
