@@ -7,6 +7,8 @@ const useForm = (steps: ReactElement[]) => {
     setCurrentStepIndex(step);
   };
 
+  const isFirstStep = currentStepIndex === 0;
+  const isLastStep = currentStepIndex + 1 === steps.length;
   const next = () => {
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((current) => current + 1);
@@ -26,6 +28,8 @@ const useForm = (steps: ReactElement[]) => {
     next,
     back,
     steps,
+    isFirstStep,
+    isLastStep,
   };
 };
 
