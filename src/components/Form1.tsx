@@ -6,7 +6,7 @@ import FormWrapper from './FormWrapper';
 type Intro = Pick<InitialData, 'age' | 'firstName' | 'lastName'>;
 
 type Props = Intro & {
-  updateField: (fields: Partial<InitialData>) => void;
+  updateField: (fields: Partial<Intro>) => void;
 };
 
 const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
