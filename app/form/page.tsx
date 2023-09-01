@@ -48,16 +48,16 @@ const Form = () => {
               Back
             </button>
           )}
-          {!isLastStep && (
+          {
             <button
               type="button"
               onClick={next}
               className="border
            rounded-md p-2 bg-gray-100 border-black border-solid"
             >
-              Next
+              {isLastStep ? 'Finish' : 'Next'}
             </button>
-          )}
+          }
         </div>
       </form>
     </div>
