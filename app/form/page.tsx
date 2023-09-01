@@ -22,14 +22,14 @@ const Form = () => {
   ]);
 
   return (
-    <div className="relative  bg-white border border-solid border-black p-8 m-4 rounded-md font-mono">
+    <div className="relative bg-white border border-solid border-black p-8 m-4 rounded-md font-mono">
       FORM
       <form>
         <div className="absolute top-2 right-2 ">
           {currentStepIndex + 1}/{steps.length}
         </div>
         <div className="mt-4 flex gap-2 justify-end">
-          {currentStepIndex !== 0 && (
+          {
             <button
               onClick={back}
               className="border
@@ -37,8 +37,8 @@ const Form = () => {
             >
               Back
             </button>
-          )}
-          {currentStepIndex + 1 !== steps.length && (
+          }
+          {
             <button
               onClick={next}
               className="border
@@ -46,7 +46,7 @@ const Form = () => {
             >
               Next
             </button>
-          )}
+          }
         </div>
       </form>
     </div>
