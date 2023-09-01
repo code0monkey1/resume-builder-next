@@ -16,7 +16,10 @@ const Form = () => {
 
   return (
     <>
-      <form className="max-[25]: border rounded-sm p-6">
+      <form
+        style={{ height: '90vh', margin: '0.2rem' }}
+        className="border rounded-sm p-6"
+      >
         <div style={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}>
           {' '}
           <h1 className="text-4xl">
