@@ -10,7 +10,7 @@ const Form1 = (props: Props) => {
         <div className="flex flex-col border border-black  p-2">
           <label>First Name</label>
           <input
-            className=" border w-fit p-2"
+            className=" border w-fit p-2 text-white"
             placeholder="enter your name"
             type="text"
             autoFocus
@@ -25,7 +25,7 @@ const Form1 = (props: Props) => {
           />
           <label>Age</label>
           <input
-            className=" border w-fit p-2"
+            className=" border w-fit p-2 text-black"
             placeholder="enter your name"
             type="text"
             required
