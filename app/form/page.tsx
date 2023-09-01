@@ -15,19 +15,8 @@ const Form = () => {
   ]);
 
   return (
-    <div className="relative bg-white">
-      <form
-        style={{ height: '90vh', margin: '0.2rem' }}
-        className="border rounded-sm p-6"
-      >
-        <div style={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}>
-          {' '}
-          <h1 className="text-4xl">
-            {' '}
-            {currentStepIndex + 1}/{steps.length}{' '}
-          </h1>
-        </div>
-      </form>
+    <div className="relative bg-white border border-solid border-black">
+      <form></form>
     </div>
   );
 };
