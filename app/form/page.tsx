@@ -23,7 +23,7 @@ export type InitialData = typeof INITIAL_DATA;
 const Form = () => {
   const [data, setData] = useState(INITIAL_DATA);
 
-  const updateFields = (fields: Partial<InitialData>) => {
+  const updateField = (fields: Partial<InitialData>) => {
     setData((prev) => {
       return { ...prev, ...fields };
     });
@@ -40,7 +40,7 @@ const Form = () => {
   } = useForm([
     <div key="1">
       <h1>
-        <Form1 {...data} updateFields={updateFields} />
+        <Form1 {...data} updateField={updateField} />
       </h1>
     </div>,
     <div key="2">

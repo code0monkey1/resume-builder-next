@@ -3,7 +3,13 @@ import { InitialData } from '@/app/form/page';
 import React from 'react';
 import FormWrapper from './FormWrapper';
 
-const Form1 = ({ firstName, lastName, age }: Partial<InitialData>) => {
+type Intro = Pick<InitialData, 'age' | 'firstName' | 'lastName'>;
+
+type Props = Intro & {
+  updateField: (fields: Partial<InitialData>) => void;
+};
+
+const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
   return (
     <>
       <FormWrapper title="Personal Information">
