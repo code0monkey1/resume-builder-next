@@ -4,6 +4,7 @@ import useForm from '@/src/ResumeBuilder/hooks/userForm';
 import Form1 from '@/src/components/Form1';
 import Form2 from '@/src/components/Form2';
 import Form3 from '@/src/components/Form3';
+import { ReactEventHandler } from 'react';
 
 const Form = () => {
   const {
@@ -30,7 +31,10 @@ const Form = () => {
       <Form3 />
     </div>,
   ]);
-
+  
+  const onSubmit=(e:)=>{
+    
+  }
   return (
     <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono">
       <form>
@@ -52,7 +56,7 @@ const Form = () => {
           {
             <button
               type="button"
-              onClick={next}
+              onClick={()=>next}
               className="
            rounded-md p-2 border"
             >
