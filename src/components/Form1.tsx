@@ -29,6 +29,7 @@ const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
           placeholder="enter your last name"
           type="text"
           required
+          onChange={(e) => updateField({ lastName: e.target.value })}
           defaultValue={lastName}
         />
         <label>Age</label>
