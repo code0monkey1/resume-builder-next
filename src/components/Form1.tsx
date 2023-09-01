@@ -12,20 +12,21 @@ const Form1 = (props: Props) => {
           placeholder="enter your name"
           type="text"
           autoFocus
-        ></input>
+          required
+        />
         <label>Last Name</label>
         <input
           className=" border  w-fit p-2"
           placeholder="enter your name"
           type="text"
-          autoFocus
-        ></input>
+          required
+        />
         <label>Age</label>
         <input
           className=" border w-fit p-2"
           placeholder="enter your name"
           type="text"
-          autoFocus
+          required
         />
       </div>
     </>
