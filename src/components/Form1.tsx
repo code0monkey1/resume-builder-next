@@ -5,12 +5,14 @@ type Props = {};
 const Form1 = (props: Props) => {
   return (
     <>
-      <label>First Name</label>
-      <input type="text" autoFocus></input>
-      <label>Last Name</label>
-      <input type="text"></input>
-      <label>Age</label>
-      <input type="number" />
+      <div className="flex flex-row">
+        <label>First Name</label>
+        <input type="text" autoFocus></input>
+        <label>Last Name</label>
+        <input type="text"></input>
+        <label>Age</label>
+        <input type="number" />
+      </div>
     </>
   );
 };

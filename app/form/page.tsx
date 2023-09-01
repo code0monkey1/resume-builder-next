@@ -37,6 +37,7 @@ const Form = () => {
         <div className="absolute top-2 right-2 ">
           {currentStepIndex + 1}/{steps.length}
         </div>
+        <div>{Step}</div>
         <div className="mt-4 flex gap-2 justify-end">
           {!isFirstStep && (
             <button
