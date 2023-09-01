@@ -7,10 +7,13 @@ const Form1 = (props: Props) => {
   return (
     <>
       <FormWrapper title="Personal Information">
-        <div className="flex flex-col border border-black  p-2">
+        <div
+          style={{ color: 'black' }}
+          className="text-black flex flex-col border border-black  p-2"
+        >
           <label>First Name</label>
           <input
-            className=" border w-fit p-2 text-yellow-400"
+            className=" border w-fit p-2"
             placeholder="enter your first name"
             type="text"
             autoFocus
