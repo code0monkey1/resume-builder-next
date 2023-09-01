@@ -7,18 +7,13 @@ const useForm = (steps: ReactElement[]) => {
     setCurrentStepIndex(step);
   };
 
-  const isFirstStep = currentStepIndex === 0;
-  const isLastStep = currentStepIndex + 1 === steps.length;
   const next = () => {
-    if (currentStepIndex + 1 < steps.length) {
+    if (currentStepIndex + 1 < steps.length)
       setCurrentStepIndex((current) => current + 1);
-    }
   };
 
   const back = () => {
-    if (currentStepIndex > 0) {
-      setCurrentStepIndex((current) => current - 1);
-    }
+    if (currentStepIndex > 0) setCurrentStepIndex((current) => current - 1);
   };
 
   return {
@@ -28,8 +23,8 @@ const useForm = (steps: ReactElement[]) => {
     next,
     back,
     steps,
-    isFirstStep,
-    isLastStep,
+    isFirstStep: currentStepIndex === 0,
+    isLastStep: currentStepIndex + 1 === steps.length,
   };
 };
 
