@@ -15,15 +15,14 @@ const Form = () => {
   ]);
 
   return (
-    <div>
-      <h1>Form</h1>
+    <div className="relative bg-white border border-solid border-black p-8 m-4 rounded-md font-mono">
+      FORM
+      <form>
+        <h1 className="absolute top-2 right-2 ">
+          {currentStepIndex + 1}/{steps.length}
+        </h1>
+      </form>
     </div>
-    // <div className="relative bg-white border border-solid border-black p-8 m-4 rounded-md font-mono">
-    //   FORM
-    //   <form>
-    //     <h1 className="absolute top-2 right-2 ">2 / 3</h1>
-    //   </form>
-    // </div>
   );
 };
 export default Form;
