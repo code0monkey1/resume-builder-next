@@ -1,5 +1,6 @@
 'use client';
 import { InitialData } from '@/app/form/page';
+import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 import FormWrapper from './FormWrapper';
 
@@ -13,6 +14,7 @@ const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
   return (
     <>
       <FormWrapper title="Personal Information">
+        <ShoppingCart className="h-4 w-4" />
         <input
           style={{ color: 'black' }}
           className=" border w-fit p-2"
