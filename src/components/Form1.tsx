@@ -1,5 +1,7 @@
 'use client';
 import { InitialData } from '@/app/form/page';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 import FormWrapper from './FormWrapper';
@@ -15,7 +17,7 @@ const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
     <>
       <FormWrapper title="Personal Information">
         <ShoppingCart className="h-4 w-4" />
-        <input
+        <Input
           style={{ color: 'black' }}
           className=" border w-fit p-2"
           placeholder="enter your first name"
@@ -24,8 +26,8 @@ const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
           required
           defaultValue={firstName}
         />
-        <label>Last Name</label>
-        <input
+        <Label>Last Name</Label>
+        <Input
           style={{ color: 'black' }}
           className=" border  w-fit p-2 text-black"
           placeholder="enter your last name"
@@ -34,8 +36,8 @@ const Form1 = ({ firstName, lastName, age, updateField }: Props) => {
           onChange={(e) => updateField({ lastName: e.target.value })}
           defaultValue={lastName}
         />
-        <label>Age</label>
-        <input
+        <Label>Age</Label>
+        <Input
           style={{ color: 'black' }}
           className=" border w-fit p-2 text-black"
           placeholder="enter your age"
