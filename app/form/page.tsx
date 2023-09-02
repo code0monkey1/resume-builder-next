@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
 import useForm from '@/src/ResumeBuilder/hooks/userForm';
 import Form1 from '@/src/components/Form1';
 import Form2 from '@/src/components/Form2';
@@ -69,22 +70,22 @@ const Form = () => {
         <div>{Step}</div>
         <div className="mt-4 flex gap-2 justify-end">
           {!isFirstStep && (
-            <button
+            <Button
               type="button"
               onClick={back}
               className="
            rounded-md p-2 border"
             >
               Back
-            </button>
+            </Button>
           )}
           {
-            <button
+            <Button
               className="
            rounded-md p-2 border"
             >
               {isLastStep ? 'Finish' : 'Next'}
-            </button>
+            </Button>
           }
         </div>
       </form>
