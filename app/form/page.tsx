@@ -63,37 +63,39 @@ const Form = () => {
     alert('submitted form');
   };
   return (
-    <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono max-w-screen-xl mx-auto ">
+    <>
       <div>
-        <Progress />
+        <Progress className="h-8" />
       </div>
-      <form onSubmit={onSubmitHandler}>
-        <div className="absolute top-2 right-2 ">
-          {currentStepIndex + 1}/{steps.length}
-        </div>
-        <div>{Step}</div>
-        <div className="mt-4 flex gap-2 justify-end">
-          {!isFirstStep && (
-            <Button
-              type="button"
-              onClick={back}
-              className="
+      <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono max-w-screen-xl mx-auto ">
+        <form onSubmit={onSubmitHandler}>
+          <div className="absolute top-2 right-2 ">
+            {currentStepIndex + 1}/{steps.length}
+          </div>
+          <div>{Step}</div>
+          <div className="mt-4 flex gap-2 justify-end">
+            {!isFirstStep && (
+              <Button
+                type="button"
+                onClick={back}
+                className="
            rounded-md p-2 border"
-            >
-              Back
-            </Button>
-          )}
-          {
-            <Button
-              className="
+              >
+                Back
+              </Button>
+            )}
+            {
+              <Button
+                className="
            rounded-md p-2 border"
-            >
-              {isLastStep ? 'Finish' : 'Next'}
-            </Button>
-          }
-        </div>
-      </form>
-    </div>
+              >
+                {isLastStep ? 'Finish' : 'Next'}
+              </Button>
+            }
+          </div>
+        </form>
+      </div>
+    </>
   );
 };
 export default Form;
