@@ -64,13 +64,13 @@ const Form = () => {
   };
   return (
     <>
-      <div>
-        <Progress className="h-8" />
-      </div>
       <div className="relative border border-solid border-black p-8 m-4 rounded-md font-mono max-w-screen-xl mx-auto ">
         <form onSubmit={onSubmitHandler}>
           <div className="absolute top-2 right-2 ">
             {currentStepIndex + 1}/{steps.length}
+          </div>
+          <div>
+            <Progress className="h-8 w-full" />
           </div>
           <div>{Step}</div>
           <div className="mt-4 flex gap-2 justify-end">
